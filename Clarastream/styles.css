@@ -1,0 +1,155 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }*/
+  
+  .continuar-button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  .imagen-modal {
+    width: 100%;
+  }
+
+  /*nav {
+    display: flex;
+    align-items: center;
+  }*/
+  /* MENÚ HAMBURGUESA */
+  
+  .hamb{
+    font-size: 50px;
+  }
+  ul{
+    background: #999;
+    border-radius: 10px;
+    top:8%;
+    right: 12%;
+  }
+  .btn{
+    margin: 2%;
+  }
+  .menu-toggle {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+    /*margin-right: 20px;*/
+  }
+  
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    z-index: 100;
+    position: absolute;
+    
+  }
+  
+  .menu li {
+    margin-right: 10px 0;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  #menu-checkbox:checked + .menu-icon + .menu {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    right: 4rem;
+    top: 3%;
+  }
+  #menu-checkbox{
+    display: none;
+  }
+/* CARRUSEL */
+  .gallery {
+    background-color: #2d2c2c;
+    padding: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    
+  }
+  
+  .carousel {
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-image {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  
+  .prev-button, .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #d21010;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 100;
+  }
+  
+  .prev-button {
+    left: 0;
+  }
+  
+  .next-button {
+    right: 0;
+  }
+  .logo{
+    width:80px;
+} 
+.footer{
+  font-family: overpass, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:#a39f9f;
+}
+.footer3{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.footer2{
+  font-family: overpass, sans-serif;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color:#a39f9f;
+}

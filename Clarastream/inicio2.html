@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>Clara Stream</title>
+</head>
+<body>        
+    <nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div style="position: absolute; width:60%; right: 19%;">
+                    <div class="">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="./img/logo-netflix.png" alt="El Logo" class="logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="menu-toggle">
+                        <input type="checkbox" id="menu-checkbox">
+                        <label for="menu-checkbox" class="menu-icon">
+                            <div class="bi bi-list hamb"></div>
+                        </label>
+                        <ul class="menu">
+                            <button type="button" id="inicio" class="btn btn-secondary">inicio</button>
+                            <button type="button" id="perfiles" class="btn btn-secondary">Perfiles</button>
+                            <button type="button" id="categorias" class="btn btn-secondary">Categorías</button>
+                            <button type="button" id="info" class="btn btn-secondary">Más info</button>
+                            <button type="button" id="contacto" class="btn btn-secondary">Contacto</button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    </nav>
+    <div class="gallery">
+        <div class="carousel">
+            <!-- Carrusel 1 -->
+            <h3>películas</h3>
+            <hr>
+            <button class="bi bi-chevron-right next-button"></button>
+            <div class="carousel-wrapper">
+              <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 1" class="carousel-image"></button>
+              <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 2" class="carousel-image"></button>
+              <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 3" class="carousel-image"></button>
+              <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 4" class="carousel-image"></button>
+              <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 5" class="carousel-image"></button>
+              <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 1" class="carousel-image"></button>
+              <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 2" class="carousel-image"></button>
+              <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 3" class="carousel-image"></button>
+              <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 4" class="carousel-image"></button>
+              <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 5" class="carousel-image"></button>
+            </div>
+            <button class="bi bi-chevron-left prev-button"></button>
+        </div>
+        <div class="carousel">
+            <h3>series</h3>
+            <hr>
+            <button class="bi bi-chevron-left prev-button"></button>
+            <div class="carousel-wrapper">
+                <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 1" class="carousel-image"></button>
+                <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 2" class="carousel-image"></button>
+                <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 3" class="carousel-image"></button>
+                <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 4" class="carousel-image"></button>
+                <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 5" class="carousel-image"></button>
+                <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 1" class="carousel-image"></button>
+                <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 2" class="carousel-image"></button>
+                <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 3" class="carousel-image"></button>
+                <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 4" class="carousel-image"></button>
+                <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 5" class="carousel-image"></button>
+            </div>
+            <button class="next-button bi bi-chevron-right"></button>
+        </div>
+        <div class="carousel">
+            <h3>tendencias</h3>
+            <hr>
+            <button class="bi bi-chevron-left prev-button"></button>
+            <div class="carousel-wrapper">
+                <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 1" class="carousel-image"></button>
+                <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 2" class="carousel-image"></button>
+                <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 3" class="carousel-image"></button>
+                <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 4" class="carousel-image"></button>
+                <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 5" class="carousel-image"></button>
+                <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 1" class="carousel-image"></button>
+                <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 2" class="carousel-image"></button>
+                <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 3" class="carousel-image"></button>
+                <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 4" class="carousel-image"></button>
+                <button type="button" class="btn btn-outline-danger"><img src="./img/generico.jpg" alt="Imagen 5" class="carousel-image"></button>
+            </div>
+            <button class="next-button bi bi-chevron-right"></button>
+         </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', ()=>{
+            const carousels = document.querySelectorAll('.carousel');
+
+            carousels.forEach(function (carousel){
+            const prevButton = carousel.querySelector('.prev-button');
+            const nextButton = carousel.querySelector('.next-button');
+            const carouselWrapper = carousel.querySelector('.carousel-wrapper');
+
+            let currentIndex = 0;
+            const images = carouselWrapper.querySelectorAll('.carousel-image');
+            const imageWidth = images[0].clientWidth;
+            const numImages = images.length;
+
+            prevButton.addEventListener('click', ()=>{
+                currentIndex = (currentIndex -1 + numImages) % numImages;
+                updateCarousel();
+            });
+
+            nextButton.addEventListener('click', ()=>{
+                currentIndex = (currentIndex + 1) % numImages;
+                updateCarousel();
+            });
+
+            function updateCarousel(){
+                const translateX = -currentIndex * imageWidth;
+                carouselWrapper.style.transform = `translateX(${translateX}px)`;
+            }
+        });
+    });
+    </script>
+    <script src="./logica.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

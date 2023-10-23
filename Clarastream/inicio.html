@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>Clara Stream</title>
+</head>
+<body>  
+    </div>
+  </nav>
+    <nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div style="position: absolute; width:60%; right: 19%;">
+                    <div class="">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="./img/logo-netflix.png" alt="El Logo" class="logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="menu-toggle" style="justify-content: flex-end;">
+                      <div style="display: flex; align-items: center;">
+                        <i class="bi bi-search"></i><input type="text" class="btn btn-outline-danger">
+                        <input type="checkbox" id="menu-checkbox">
+                        <label for="menu-checkbox" class="menu-icon">
+                            <div class="bi bi-list hamb"></div>
+                        </label>
+                        <ul class="menu">
+                            <button type="button" id="inicio" class="btn btn-secondary">Inicio</button>
+                            <button type="button" id="perfiles" class="btn btn-secondary">Perfiles</button>
+                            <button type="button" id="categorias" class="btn btn-secondary">Categorías</button>
+                            <button type="button" id="info" class="btn btn-secondary">Más info</button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+ </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <img class="imagen-modal" src="img/P. Murder.jpg" alt="">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+        </div>
+        <div class="modal-body bg-dark">
+            Annalise Keating, una brillante abogada penalista y profesora de leyes, se involucra en un retorcido caso de homicidio con cinco de sus estudiantes.
+            Elenco: Viola Davis, Billy Brown, Alfred Enoch, etc.
+            Géneros: Series dramáticas, Series judiciales, Series de misterio.
+            Este título es de: Suspenso            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="gossipModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <img class="imagen-modal" src="img/P. Gossip.jpg" alt="">
+          <h1 class="modal-title fs-5" id="gossipModalLabel"></h1>
+        </div>
+        <div class="modal-body bg-dark">
+            Un grupo de estudiantes privilegiados de Manhattan consiguen todo lo que se proponen. Hasta que un blogger anónimo se dedica a seguir cada paso que dan.
+            Elenco: Blake Lively, Leighton Menester, Penn Badgley, etc.
+            Géneros: Series dramáticas, Series basadas en libros, Series de adolescentes.
+            Este título es: Escandaloso.            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Modal -->
+   <div class="modal fade" id="atrapameModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <img class="imagen-modal" src="img/P. Atrapame.jpg" alt="">
+          <h1 class="modal-title fs-5" id="atrapameModalLabel"></h1>
+        </div>
+        <div class="modal-body bg-dark">
+            Un agente del FBI asume como propia misión de capturar el astuto estafador Frank Abagnale Jr., pero Frank no solo se escapa, sino que deleita con la persecución.
+            Elenco: Leonardo DiCaprio, Tom Hanks, Christopher Walken, etc.
+            Géneros: Cine dramático, Películas basadas en libros, Películas basadas en hechos reales.           
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Modal -->
+   <div class="modal fade" id="manifiestoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <img class="imagen-modal" src="img/P. Manifiesto.jpg" alt="">
+          <h1 class="modal-title fs-5" id="manifiestoModalLabel"></h1>
+        </div>
+        <div class="modal-body bg-dark">
+            Un avión aterriza misteriosamente años después de despegar, y las personas a bordo vuelven a un mundo que ha continuado sin ellos y afrontan nuevas y extrañas realidades.
+Elenco: Melissa Roxburgh, Josh Dallas, J.R Ramires, etc.
+Géneros: Series dramáticas, Series de sci-fi, Series de misterio.
+Este título es: Surrealista, De suspenso.         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+   <!-- Modal -->
+   <div class="modal fade" id="eliteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <img class="imagen-modal" src="img/P. Elite.jpg" alt="">
+          <h1 class="modal-title fs-5" id="eliteModalLabel"></h1>
+        </div>
+        <div class="modal-body bg-dark">
+            Las Encinas es el colegio más exclusivo de España, el lugar donde estudian los hijos de la élite y donde acaban de ser admitidos tres jóvenes de clase baja, procedentes de un colegio público en ruinas.
+            Elenco: Itzan Escamilla, Miguel Bernardeau, Danna Paola, etc.
+            Géneros: Series dramáticas, De España, Series de adolescentes.
+            Este título es: De suspenso.        
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" id="breakingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <img class="imagen-modal" src="img/P. Breaking.jpg" alt="">
+          <h1 class="modal-title fs-5" id="breakingModalLabel"></h1>
+        </div>
+        <div class="modal-body bg-dark">
+            Un profesor de química de secundaria con cáncer terminal se asocia a un exestudiante para asegurar el futuro de su familia al fabricar y vender metanfetaminas.
+Elenco: Bryan Cranston, Aaron Paul, Anna Gunn, etc.
+Géneros: Series dramáticas, Series sobre crímenes, Series de EE.UU.       
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="amigosModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <img class="imagen-modal" src="img/P. No strings.jpg" alt="">
+          <h1 class="modal-title fs-5" id="amigosModalLabel"></h1>
+        </div>
+        <div class="modal-body bg-dark">
+            Los amigos de toda la vida Emma y Adam llevan su relación al siguiente nivel al tener sexo. Con el temor de arruinar su amistad, los dos nuevos amantes hacen un pacto para mantener las cosas puramente físicas, sin peleas, sin celos, ni expectativas. Emma y Adam se comprometen a hacer lo que quieran, en donde quieran, mientras no se enamoren. La pregunta es ¿Quién caerá primero?
+            Elenco: Natalie Portman, Ashton Kutcher, Greta Gerwig, etc.
+            Géneros: Películas románticas para reír, Películas para reír, Cine romántico.
+            Este título es: Ingenioso, Romántico.   
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="orangeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <img class="imagen-modal" src="img/P. Orange.jpg" alt="">
+          <h1 class="modal-title fs-5" id="orangeModalLabel"></h1>
+        </div>
+        <div class="modal-body bg-dark">
+            Un crimen del pasado obliga a una neoyorquina privilegiada a cumplir su condena en una cárcel de mujeres. Una vez tras las rejas, no tarda en hacer amigas… y enemigas.
+Elenco: Taylor Schilling, Kate Mulgrew, Laura Prepon, etc.
+Géneros: Series dramáticas, Series basadas en libros, Series de comedia.
+Este título es: Sarcástico, Ingenioso, Irreverente.   
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Modal -->
+<div class="modal fade" id="houseModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <img class="imagen-modal" src="img/P. House.jpg" alt="">
+          <h1 class="modal-title fs-5" id="houseModalLabel"></h1>
+        </div>
+        <div class="modal-body bg-dark">
+            Frank ya no está, y Claire Underwood pisa fuerte como la primera mujer presidenta de Estados Unidos. Aunque a algunos no les guste.
+            Elenco: Robin Wright, Michael Kelly, Diane Lane, etc.
+            Géneros: Series sobre política, Series dramáticas, Series de EE.UU.
+            Este título es: Complejo, Sombrio.  
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+   <!-- Modal -->
+<div class="modal fade" id="chicasModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <img class="imagen-modal" src="img/P. Chicas.jpg" alt="">
+          <h1 class="modal-title fs-5" id="chicasModalLabel"></h1>
+        </div>
+        <div class="modal-body bg-dark">
+            Madrid, años veinte. Cuatro operadoras de la Compañía de Telefonía de España hacen resonar una revolución mientras lidian con el amor, la amistad y el trabajo.
+Elenco: Blanca Suárez, Yon Gonzaléz, Ana Fernández, etc.
+Géneros: Series dramáticas románticas, Series dramáticas, De España.
+Este título es: Agridulce, Emotivo. 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+<div class="modal fade" id="sunsetModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <img class="imagen-modal" src="img/P. Selling.jpg" alt="">
+          <h1 class="modal-title fs-5" id="sunsetModalLabel"></h1>
+        </div>
+        <div class="modal-body bg-dark">
+            Los selectos agentes del Grupo Oppenheim les venden una vida de lujos a los clientes pudientes de L.A. Las relaciones lo son todo, lo cual casi siempre conlleva mucho drama.
+            Género: Reality Shows, Series de EE.UU., Estilo de vida.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="crownModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <img class="imagen-modal" src="img/P. Crown.jpg" alt="">
+          <h1 class="modal-title fs-5" id="crownModalLabel"></h1>
+        </div>
+        <div class="modal-body bg-dark">
+            Una crónica de la vida de la reina Isabel II de los años 40 a los tiempos modernos. A medida que pasan las décadas, se revelan intrigas personales, romances y rivalidades políticas.
+Elenco: Imelda Staunton, Jonathan Pryce, Lesley Manville, etc.
+Géneros: Series sobre política, Series dramáticas, De Gran Bretaña.
+Este título es: Íntimo.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="officeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <img class="imagen-modal" src="img/P. Office.jpg" alt="">
+          <h1 class="modal-title fs-5" id="officeModalLabel"></h1>
+        </div>
+        <div class="modal-body bg-dark">
+            El iluso jefe Michael intenta encauzar el descontento de sus empleados en la empresa papelera Dunder Mifflin a través de continuas debilidades y percances.
+Elenco: Steve Carell, John Krasinski, Jenna Fischer, etc.
+Géneros: Sitcoms, Series de comedia, Series de EE.UU.
+Este título es: Ingenioso, Irreverente.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="peakyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <img class="imagen-modal" src="img/P. Peaky.jpg" alt="">
+          <h1 class="modal-title fs-5" id="peakyModalLabel"></h1>
+        </div>
+        <div class="modal-body bg-dark">
+            1919, Inglaterra. Thomas Shelby lidera una conocida banda de Birmingham que avanza con ferocidad por el bajo mundo.
+Elenco: Cillian Murphy, Sam Neill, Helen McCory, etc.
+Géneros: Series dramáticas, De Gran Bretaña, Historias de época.
+Este título es: Violento.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Modal -->
+<div class="modal fade" id="nextModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <img class="imagen-modal" src="img/P. Next.jpg" alt="">
+          <h1 class="modal-title fs-5" id="nextModalLabel"></h1>
+        </div>
+        <div class="modal-body bg-dark">
+            Varios diseñadores se unen para crear estilos visionarios que funcionen para todos en esta competencia presentada por Alexa Chung y Tan France.
+            Elenco: Tan France, Gigi Hadid, Alexa Chung.
+            Géneros: Reality shows sobre competencias, Reality shows, Series de EE.UU.
+            Este título es: Optimista.            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="pabloModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+           <img class="imagen-modal" src="img/P. Pablo.jpg" alt="">
+         <h1 class="modal-title fs-5" id="pabloModalLabel"></h1>
+       </div>
+       <div class="modal-body bg-dark">
+        Esta fascinante serie narra la vida del infame Pablo Escobar, desde sus días como ratero hasta convertirse en el jefe de un imperio de narcotráfico.
+Elenco: Andrés Parra, Angie Cepeda, Cecilia Navia, etc.
+Géneros: Series dramáticas, Telenovelas sobre crimen, De Colombia, etc.
+Este título es: Crudo.              
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+         <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+       </div>
+     </div>
+   </div>
+ </div>
+
+ <!-- Modal -->
+<div class="modal fade" id="damaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <img class="imagen-modal" src="img/P. Gambito.jpg" alt="">
+          <h1 class="modal-title fs-5" id="damaModalLabel"></h1>
+        </div>
+        <div class="modal-body bg-dark">
+            En los cincuenta, una joven de un orfanato descubre que tiene un increíble don para el ajedrez y recorre el arduo caminan la fama mientras lucha contra las adicciones.
+            Elenco: Anya Taylor Joy, Bill Camp, Marielle Heller, etc.
+            Géneros: Series dramáticas, Series basadas en libros, Series de EE.UU.
+            Este título es: Complejo, Íntimo, Emotivo.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="marginalModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <img class="imagen-modal" src="img/P. Marginal.jpg" alt="">
+          <h1 class="modal-title fs-5" id="marginalModalLabel"></h1>
+        </div>
+        <div class="modal-body bg-dark">
+            Un expolicía infiltrado intenta desbaratar una banda que opera desde la cárcel, pero antes deberá manejar los códigos del inframundo para sobrevivir.
+            Elenco: Juan Minujín, Nicolás Furtado, Claudio Rissi, etc.
+            Géneros: Series dramáticas, De Argentina, Series sobre crímenes.
+            Este título es: Violento, Crudo.            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Modal -->
+<div class="modal fade" id="girlsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <img class="imagen-modal" src="img/P. Gilmore.jpg" alt="">
+          <h1 class="modal-title fs-5" id="girlsModalLabel"></h1>
+        </div>
+        <div class="modal-body bg-dark">
+            Lorelai es una mamá soltera, independiente y tenaz. Su brillante hija Rory esta destinada a grandes cosas. Juntas viven un continuo debate agudo y apasionado.
+            Elenco: Lauren Graham, Alexis Bedel, Scott Patterson, etc.
+            Géneros: Series dramáticas románticas, Series dramáticas, Series de adolescentes.
+            Este título es: Ingenioso, Íntimo, Romántico.    
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Modal -->
+   <div class="modal fade" id="emilyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <img class="imagen-modal" src="img/P. Emily.jpg" alt="">
+          <h1 class="modal-title fs-5" id="emilyModalLabel"></h1>
+        </div>
+        <div class="modal-body bg-dark">
+            Gracias a un trabajo soñado, una ejecutiva de Chicago comienza una nueva etapa en París. Pero equilibrar carrera, amistades y amor no es tarea fácil, ni siquiera allí.
+Elenco: Lily Collins, Phillippine Leroy-Beaulieu, Ashley Park. Etc.
+Géneros: Series dramáticas románticas, Series dramáticas, Series de comedia.
+Este título es: Excéntrico, Romántico.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+   <!-- Modal -->
+   <div class="modal fade" id="casaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <img class="imagen-modal" src="img/P. Casa.jpg" alt="">
+          <h1 class="modal-title fs-5" id="casaModalLabel"></h1>
+        </div>
+        <div class="modal-body bg-dark">
+            Ocho ladrones toman rehenes en la Fábrica Nacional de Moneda y Timbre de España, mientras el líder de la banda manipula a la policía para cumplir con su plan.
+Elenco: Úrsula Corberó, Álvaro Morte, Itziar Ituño, etc.
+Géneros: De España, Series sobre crímenes, Thrillers de TV.
+Este título es: De suspenso, Emocionante.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Modal -->
+   <div class="modal fade" id="sexModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <img class="imagen-modal" src="img/P. Sex.jpg" alt="">
+          <h1 class="modal-title fs-5" id="sexModalLabel"></h1>
+        </div>
+        <div class="modal-body bg-dark">
+            Por tener madre terapeuta, Otis, siempre tiene respuestas cuando de sexo se trata. Así que su rebelde amiga Maeve le propone abrir una clínica de terapia sexual en la escuela.
+Elenco: Asa Butterfield, Gillian Anderson, Ncuti Gatwa, etc.
+Géneros: Series dramáticas, De Gran Bretaña, Series de adolescentes.
+Este título es: Picante, Irreverente, Agridulce.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="abbeyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <img class="imagen-modal" src="img/P. Abbey.jpg" alt="">
+          <h1 class="modal-title fs-5" id="abbeyModalLabel"></h1>
+        </div>
+        <div class="modal-body bg-dark">
+            A través de las situaciones que viven la familia Crawley y su servidumbre, esta serie desenmascara el esnobismo y las intrigas de un sistema de clases en decadencia.
+Elenco: Hugh Bonneville, Jessica Brown Findlay, Samantha Bond, etc.
+Géneros: Series dramáticas, De Gran Bretaña, Historias de época.
+Este título es: Complejo, Sutil.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="darkModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <img class="imagen-modal" src="img/P. Dark.jpg" alt="">
+          <h1 class="modal-title fs-5" id="darkModalLabel"></h1>
+        </div>
+        <div class="modal-body bg-dark">
+            La desaparición de un niño lleva a cuatro familias a una frenética búsqueda, mientras descubren a un misterio que abarca tres generaciones.
+Elenco: Louis Hofmann, Oliver Masucci, Jordis Triebel, etc.
+Géneros: Series dramáticas, De Alemania, Series de sci-fi.
+Este título es: Surrealista, Escalofriante, Inquietante.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="treintaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <img class="imagen-modal" src="img/P. 30.jpg" alt="">
+              <h1 class="modal-title fs-5" id="treintaModalLabel"></h1>
+            </div>
+            <div class="modal-body bg-dark">
+                Cuando el cumpleaños de una adolescente fracasa rotundamente, la joven, pide tener 30 años y, al despertar al otro día, su deseo se ha cumplido.
+Elenco: Jennifer Garner, Mark Ruffalo, Judy Greer, etc.
+Géneros: Películas románticas para reír, Cine romántico.
+Este título es: Encantador, Optimista, Romántico.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+    <div class="modal fade" id="conejitasModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <img class="imagen-modal" src="img/P. Conejitas.jpg" alt="">
+              <h1 class="modal-title fs-5" id="conejitasModalLabel"></h1>
+            </div>
+            <div class="modal-body bg-dark">
+                Cuando la echan de la mansión PlayBoy, Shelley pierde su sueño de salir en la revista y se concentra en cambiar la imagen de las chicas de una sonoridad en decadencia.
+                Elenco: Anna Faris, Colin Hanks, Emma Stone, etc.
+                Géneros: Películas románticas para reír, Películas para reír, Cine romántico.
+                Este título es: Disparatado, Románticos.                
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+    <div class="modal fade" id="islaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <img class="imagen-modal" src="img/P. Isla.jpg" alt="">
+              <h1 class="modal-title fs-5" id="islaModalLabel"></h1>
+            </div>
+            <div class="modal-body bg-dark">
+                Mientras investiga la desaparición de una reclusa en un hospital psiquiátrico, un alguacil federal termina envuelto en una red de mentiras y comienza a dudar de sí mismo.
+                Elenco: Leonardo DiCaprio, Mark Ruffalo, Ben Kingsley, etc.
+                Géneros: Film noir, De intriga, Películas de misterio.
+                Este título es: Surrealista, Inquietante.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Modal -->
+    <div class="modal fade" id="guerraModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <img class="imagen-modal" src="img/P. Guerra.jpg" alt="">
+              <h1 class="modal-title fs-5" id="guerraModalLabel"></h1>
+            </div>
+            <div class="modal-body bg-dark">
+                Dos amigas muestran las garras cuando sus bodas se programan en la misma fecha y el mismo lugar…, y ninguna esta dispuesta a ceder su día soñado.
+                Elenco: Kate Hudson, Anne Hathaway, Bryan Greenberg, etc.
+                Géneros: Películas románticas para reír, Películas para reír, Cine romántico.
+                Este título es: Encantador, Romántico.  
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Modal -->
+    <div class="modal fade" id="scarfaceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <img class="imagen-modal" src="img/P. Scarface.jpg" alt="">
+              <h1 class="modal-title fs-5" id="scarfaceModalLabel"></h1>
+            </div>
+            <div class="modal-body bg-dark">
+                En su ascenso en el negocio del narcotráfico de Miami, un gánster cubano se sumerge en un mundo de adicción, obsesión y crueldad y paga un alto precio:
+                Elenco: Al Pacino, Steven Bauer, Michelle Pfeiffer, etc.
+                Géneros: Cine de ayer, hoy y siempre, Thrillers clásicos, Cine drámatico.
+                Este título es: Violento.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Modal -->
+    <div class="modal fade" id="juegosModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <img class="imagen-modal" src="img/P. Juegos.jpg" alt="">
+              <h1 class="modal-title fs-5" id="juegosModalLabel"></h1>
+            </div>
+            <div class="modal-body bg-dark">
+                En un mundo post-apocalíptico, Katniss y Peeta representaran a su distrito en una competencia televisada en la que cada participante lucha contra la muerte.
+Elenco: Jennifer Lawrence, Josh Hutcherson, Liam Hemsworth, etc.
+Géneros: Cine de sci-fi, Cine dramático, Películas basadas en libros.
+Este título es: Agridulce.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="gallery">
+        <div class="carousel">
+            <!-- Carrusel 1 -->
+            <h3>CONTINUAR VIENDO</h3>
+            <hr>
+            <button class="bi bi-chevron-right next-button"></button>
+            <div class="carousel-wrapper">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-danger"><img src="./img/Murder.jpeg" alt="Imagen 1" class="carousel-image"></button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#gossipModal" class="btn btn-outline-danger"><img src="./img/Gossip.jpeg" alt="Imagen 2" class="carousel-image"></button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#atrapameModal" class="btn btn-outline-danger"><img src="./img/Atrapame.jpeg" alt="Imagen 3" class="carousel-image"></button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#manifiestoModal" class="btn btn-outline-danger"><img src="./img/Manifest.jpeg" alt="Imagen 4" class="carousel-image"></button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#eliteModal" class="btn btn-outline-danger"><img src="./img/Elite.jpeg" alt="Imagen 5" class="carousel-image"></button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#breakingModal" class="btn btn-outline-danger"><img src="./img/Breaking.jpg" alt="Imagen 1" class="carousel-image"></button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#amigosModal" class="btn btn-outline-danger"><img src="./img/Amigos.jpg" alt="Imagen 2" class="carousel-image"></button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#orangeModal" class="btn btn-outline-danger"><img src="./img/Orange.jpg" alt="Imagen 3" class="carousel-image"></button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#houseModal" class="btn btn-outline-danger"><img src="./img/House.jpg" alt="Imagen 4" class="carousel-image"></button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#chicasModal" class="btn btn-outline-danger"><img src="./img/Chicas.jpg" alt="Imagen 5" class="carousel-image"></button>
+            </div>
+            <button class="bi bi-chevron-left prev-button"></button>
+        </div>
+        <div class="carousel">
+            <h3>TENDENCIAS</h3>
+            <hr>
+            <button class="bi bi-chevron-left prev-button"></button>
+            <div class="carousel-wrapper">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#sunsetModal" class="btn btn-outline-danger"><img src="./img/Sunset.jpeg" alt="Imagen 1" class="carousel-image"></button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#crownModal" class="btn btn-outline-danger"><img src="./img/Crown.jpeg" alt="Imagen 2" class="carousel-image"></button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#officeModal" class="btn btn-outline-danger"><img src="./img/Office.jpeg" alt="Imagen 3" class="carousel-image"></button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#peakyModal" class="btn btn-outline-danger"><img src="./img/Peaky.jpeg" alt="Imagen 4" class="carousel-image"></button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#nextModal" class="btn btn-outline-danger"><img src="./img/Next.jpeg" alt="Imagen 5" class="carousel-image"></button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#pabloModal" class="btn btn-outline-danger"><img src="./img/pablo.jpeg" alt="Imagen 1" class="carousel-image"></button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#damaModal" class="btn btn-outline-danger"><img src="./img/Dama.jpeg" alt="Imagen 2" class="carousel-image"></button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#marginalModal" class="btn btn-outline-danger"><img src="./img/Marginal.jpeg" alt="Imagen 3" class="carousel-image"></button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#girlsModal" class="btn btn-outline-danger"><img src="./img/Girls.Jpeg" alt="Imagen 4" class="carousel-image"></button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#emilyModal" class="btn btn-outline-danger"><img src="./img/Emily.jpg" alt="Imagen 5" class="carousel-image"></button>
+            </div>
+            <button class="next-button bi bi-chevron-right"></button>
+        </div>
+        <div class="carousel">
+            <h3>RECOMENDADOS</h3>
+            <hr>
+            <button class="bi bi-chevron-left prev-button"></button>
+            <div class="carousel-wrapper">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#casaModal" class="btn btn-outline-danger"><img src="./img/Casa.jpeg" alt="Imagen 1" class="carousel-image"></button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#sexModal" class="btn btn-outline-danger"><img src="./img/Sex.jpeg" alt="Imagen 2" class="carousel-image"></button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#abbeyModal" class="btn btn-outline-danger"><img src="./img/Abbey.jpeg" alt="Imagen 3" class="carousel-image"></button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#darkModal" class="btn btn-outline-danger"><img src="./img/Dark.jpeg" alt="Imagen 4" class="carousel-image"></button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#treintaModal" class="btn btn-outline-danger"><img src="./img/30.jpeg" alt="Imagen 5" class="carousel-image"></button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#conejitasModal" class="btn btn-outline-danger"><img src="./img/ Conejitas.jpeg" alt="Imagen 1" class="carousel-image"></button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#islaModal" class="btn btn-outline-danger"><img src="./img/Isla.jpeg" alt="Imagen 2" class="carousel-image"></button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#guerraModal" class="btn btn-outline-danger"><img src="./img/Guerra.jpeg" alt="Imagen 3" class="carousel-image"></button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#scarfaceModal" class="btn btn-outline-danger"><img src="./img/Caracortada.jpeg" alt="Imagen 4" class="carousel-image"></button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#juegosModal" class="btn btn-outline-danger"><img src="./img/Juegos.jpeg" alt="Imagen 5" class="carousel-image"></button>
+            </div>
+            <button class="next-button bi bi-chevron-right"></button>
+         </div>
+        </div>
+      </main>
+      <hr>
+      <footer>
+        <div class="footer">
+          <p><i class="bi bi-tropical-storm"> Materiales y Procesos II</i></p>
+          <p><i class="bi bi-bullseye"> Presented by: Clara Richter</i></p>
+          <p><i class="bi bi-mortarboard"> Universidad de Palermo/0129011/Cátedra: Molinos/Lic. en Diseño/2023</i></p>
+        </div>
+      </footer>
+    </body>
+    </html>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', ()=>{
+            const carousels = document.querySelectorAll('.carousel');
+
+            carousels.forEach(function (carousel){
+            const prevButton = carousel.querySelector('.prev-button');
+            const nextButton = carousel.querySelector('.next-button');
+            const carouselWrapper = carousel.querySelector('.carousel-wrapper');
+
+            let currentIndex = 0;
+            const images = carouselWrapper.querySelectorAll('.carousel-image');
+            const imageWidth = images[0].clientWidth;
+            const numImages = images.length;
+
+            prevButton.addEventListener('click', ()=>{
+                currentIndex = (currentIndex -1 + numImages) % numImages;
+                updateCarousel();
+            });
+
+            nextButton.addEventListener('click', ()=>{
+                currentIndex = (currentIndex + 1) % numImages;
+                updateCarousel();
+            });
+
+            function updateCarousel(){
+                const translateX = -currentIndex * imageWidth;
+                carouselWrapper.style.transform = `translateX(${translateX}px)`;
+            }
+        });
+    });
+    </script>
+    <script src="./logica.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

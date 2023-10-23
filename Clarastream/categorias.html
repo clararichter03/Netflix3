@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>Clara Stream</title>
+</head>
+<body>  
+    </div>
+  </nav>
+    <nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div style="position: absolute; width:60%; right: 19%;">
+                    <div class="">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="./img/logo-netflix.png" alt="El Logo" class="logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="menu-toggle" style="justify-content: flex-end;">
+                        <input type="checkbox" id="menu-checkbox">
+                        <label for="menu-checkbox" class="menu-icon">
+                            <div class="bi bi-list hamb"></div>
+                        </label>
+                        <ul class="menu">
+                            <button type="button" id="inicio" class="btn btn-secondary">Inicio</button>
+                            <button type="button" id="perfiles" class="btn btn-secondary">Perfiles</button>
+                            <button type="button" id="categorias" class="btn btn-secondary">Categorías</button>
+                            <button type="button" id="info" class="btn btn-secondary">Más info</button>
+                            <button type="button" id="contacto" class="btn btn-secondary">Contacto</button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <center>
+
+        <div class="carousel">
+            <h3>CATEGORÍAS</h3>
+            <hr>
+            <label for="menu">Géneros:</label>
+
+            <select id="menu">
+                <option value="opcion1">Acción</option>
+              <option value="opcion1">Argentinas</option>
+              <option value="opcion2">Clásicas</option>
+              <option value="opcion3">Drama</option>
+              <option value="opcion4">Documentales</option>
+              <option value="opcion5">Fantasía</option>
+              <option value="opcion6">Romances</option>
+              <option value="opcion7">Reality</option>
+              <option value="opcion7">Terror</option>
+            </select>
+        </div>
+        <button type="button" onclick="goBack()" class="btn btn-danger">Volver</button>
+      
+    </center>
+      <hr>
+      <footer>
+        <div class="footer">
+          <p><i class="bi bi-tropical-storm"> Materiales y Procesos II</i></p>
+          <p><i class="bi bi-bullseye"> Presented by: Clara Richter</i></p>
+          <p><i class="bi bi-mortarboard"> Universidad de Palermo/0129011/Cátedra: Molinos/Lic. en Diseño/2023</i></p>
+        </div>
+      </footer>
+    <script>
+        function goBack(){
+            window.history.back()
+        }
+    </script>
+    <script src="./logica.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
